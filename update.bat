@@ -5,8 +5,8 @@
 SETLOCAL
 
 SET Base=%~dp0%
-SET FPGit=http://github.com/graemeg/freepascal.git
-SET LazGit=http://github.com/graemeg/lazarus.git
+SET FPGit=https://github.com/graemeg/freepascal.git
+SET LazGit=https://github.com/graemeg/lazarus.git
 SET FPCPath=%Base%\FPC
 SET LazPath=%Base%\Lazarus
 
@@ -43,4 +43,5 @@ timeout /t 5
 GOTO :EOF
 
 :Err
+PAUSE
 "%ComSpec%" /C EXIT 1

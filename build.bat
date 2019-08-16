@@ -50,6 +50,7 @@ GOTO :EOF
 :: ~~~ Build FPC ~~~
 :: Uses externals: Make_Opt, FPCPath, TargCPU, TargOS, FPC_Opt, Cross
 :BuildFPC
+	TITLE Making FPC for %TargCPU% %TargOS%
 	ECHO Making FPC for %TargCPU% %TargOS%
 
 	PUSHD "%FPCPath%"
@@ -92,6 +93,7 @@ GOTO :EOF
 :: ~~~ Build Lazarus ~~~
 :: Uses externals: Make_Opt, FPCPath, LazPath, TargCPU, TargOS, LazOpt
 :BuildLaz
+	TITLE Making Lazarus for %TargCPU% %TargOS%
 	ECHO Making Lazarus for %TargCPU% %TargOS%
 
 	SETLOCAL
